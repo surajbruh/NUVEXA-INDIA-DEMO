@@ -1,0 +1,58 @@
+{
+  "about": {
+    "companyName": "Nuvexa India Solutions",
+    "address": "Room No 706, 7th Floor, Plot No. 37, Sector 19A, Vashi, Navi Mumbai, Maharashtra 400703.",
+    "mail": "info@nuvexaindia.com",
+    "description": "Pellentesque in commodo elit. Nunc tincidun sapien eget condimentum. Vivamus aliquam sollicitudin purus. Quisque sem leo."
+  },
+  "navigation": [
+    {
+      "name": "home",
+      "href": "/"
+    },
+    {
+      "name": "about us",
+      "href": "/about"
+    },
+    {
+      "name": "services",
+      "href": "/services",
+      "dropdown": [
+        {
+          "name": "shipping",
+          "href": "/services/shipping"
+        },
+        {
+          "name": "sales and marketing",
+          "href": "/services/sales-and-marketing"
+        },
+        {
+          "name": "storage",
+          "href": "/services/storage"
+        }
+      ]
+    },
+    {
+      "name": "products",
+      "href": "/products",
+      "dropdown": [
+        {
+          "name": "lpg",
+          "href": "/products/lpg"
+        },
+        {
+          "name": "diesel",
+          "href": "/products/diesel"
+        },
+        {
+          "name": "fuel oil",
+          "href": "/products/fuel-oil"
+        }
+      ]
+    },
+    {
+      "name": "contact us",
+      "href": "/contact"
+    }
+  ]
+}

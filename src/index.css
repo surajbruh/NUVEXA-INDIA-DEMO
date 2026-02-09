@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+/* ------------------------------
+   Base Reset (Tailwind-safe)
+--------------------------------*/
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  :root {
+    --social-icon: #99a1af;
+  }
+}
+
+@layer components {
+  .navItem,
+  .quick-links {
+    position: relative;
+  }
+
+  .navItem::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .navItem:hover::after,
+  .navItem:focus-visible::after {
+    transform: scaleX(1);
+  }
+
+  .quick-links::after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #ffffff;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .quick-links:hover::after,
+  .quick-links:focus-visible::after {
+    transform: scaleY(1);
+  }
+}
