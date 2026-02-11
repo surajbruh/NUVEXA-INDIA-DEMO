@@ -88,5 +88,26 @@
       "description": "Elviora LLC is a diversified trading company offering premium products and services with a strong commitment to reliability and excellence.",
       "image": "/images/websites/elviorallc.png"
     }
+  ],
+
+  "cards": [
+    {
+      "href": "/services/product-engineering",
+      "title": "Product Engineering",
+      "description": "We design, develop, and scale high-quality digital products using modern technologies, ensuring performance, security, and scalability.",
+      "icon": "product-engineering"
+    },
+    {
+      "href": "/services/big-data-analytics",
+      "title": "Big Data & Analytics",
+      "description": "Transform raw data into actionable insights with advanced analytics, data processing, and visualization solutions tailored to your business.",
+      "icon": "big-data-analytics"
+    },
+    {
+      "href": "/services/creative-solutions",
+      "title": "Creative Solutions",
+      "description": "Deliver visually stunning and user-focused designs through innovative UI/UX, branding, and creative digital experiences.",
+      "icon": "creative-solutions"
+    }
   ]
 }

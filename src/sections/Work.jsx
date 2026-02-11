@@ -26,7 +26,8 @@ const Work = () => {
               id="work-heading"
               className="uppercase font-bold text-2xl sm:text-3xl md:text-4xl leading-tight"
             >
-              Proven Results Through Real Projects
+              Proven Results Through{" "}
+              <span className="text-red-500">Real Projects</span>
             </h2>
 
             <p className="font-light text-sm sm:text-base md:text-lg text-gray-600">
