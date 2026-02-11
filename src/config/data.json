@@ -54,5 +54,39 @@
       "name": "contact us",
       "href": "/contact"
     }
+  ],
+
+  "slides": [
+    "https://images.unsplash.com/photo-1761839257475-4ca368dae6c3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "/images/slides/slide1.jpg",
+    "/images/slides/slide2.jpg",
+    "/images/slides/slide3.jpg"
+  ],
+
+  "websites": [
+    {
+      "websiteURL": "https://navilshipping.com/",
+      "title": "Navil Shipping & Logistics",
+      "description": "Navil Shipping provides reliable global shipping, freight forwarding, and logistics solutions tailored to international trade requirements.",
+      "image": "/images/websites/navilshipping.png"
+    },
+    {
+      "websiteURL": "https://petroflexfze.com/",
+      "title": "Petroflex FZE",
+      "description": "Petroflex FZE specializes in petrochemical trading, supplying high-quality industrial and energy-related products across global markets.",
+      "image": "/images/websites/petroflexfze.png"
+    },
+    {
+      "websiteURL": "https://fortifytrdllc.com/",
+      "title": "Fortify Trading LLC",
+      "description": "Fortify Trading LLC delivers dependable trading solutions, focusing on quality sourcing, efficient logistics, and long-term business partnerships.",
+      "image": "/images/websites/fortifytrdllc.png"
+    },
+    {
+      "websiteURL": "https://elviorallc.com/",
+      "title": "Elviora LLC",
+      "description": "Elviora LLC is a diversified trading company offering premium products and services with a strong commitment to reliability and excellence.",
+      "image": "/images/websites/elviorallc.png"
+    }
   ]
 }
