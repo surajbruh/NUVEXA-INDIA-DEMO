@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 
 // pages
 import Home from "./pages/Home";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Routes>
         <Route index element={<Home />} />
+        <Route path="contact" element={<Contact />} />
       </Routes>
       <Footer />
     </>
