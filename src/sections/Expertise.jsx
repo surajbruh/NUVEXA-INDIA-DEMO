@@ -1,6 +1,13 @@
 import React from "react";
 
+const icons = import.meta.glob("/public/icons/*.svg", {
+  eager: true,
+  as: "url",
+});
+
 const Expertise = () => {
+  const iconList = Object.values(icons);
+
   return (
     <section className="bg-white" aria-labelledby="expertise-heading">
       <div className="max-w-7xl mx-auto px-4 py-14 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -23,48 +30,31 @@ const Expertise = () => {
         </div>
 
         {/* Right: Expertise Icons */}
-        <div className="w-max mx-auto grid grid-cols-3 sm:grid-cols-4 gap-6 justify-items-center">
-          {Array.from({ length: 2 }).map((_, index) => (
-            <figure
-              key={index}
-              className="
-        group relative
-        flex items-center justify-center
-        bg-zinc-200 w-20 h-20 rounded-md
-        focus-within:ring-2 focus-within:ring-red-500
-      "
-              tabIndex={0}
-              aria-describedby={`expertise-tooltip-${index}`}
-            >
-              {/* Icon */}
-              <img
-                src="/icons/HTML.svg"
-                alt="HTML technology expertise"
-                className="w-10 h-10 object-contain"
-                loading="lazy"
-              />
-
-              {/* Tooltip */}
-              <figcaption
-                id={`expertise-tooltip-${index}`}
+        <ul
+          className="lg:w-max lg:mx-auto
+            grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5
+            gap-6 justify-items-center
+          "
+          aria-label="Technology expertise icons"
+        >
+          {iconList.map((src, index) => (
+            <li key={index}>
+              <figure
                 className="
-          absolute bottom-full mb-2 left-1/2 -translate-x-1/2
-          z-10
-          bg-red-500 text-white text-xs
-          px-4 py-2 rounded-md shadow-md
-          whitespace-nowrap
-          opacity-0 scale-95
-          transition-all duration-200
-          pointer-events-none
-          group-hover:opacity-100 group-hover:scale-100
-          group-focus-within:opacity-100 group-focus-within:scale-100
-        "
+                  flex items-center justify-center
+                  bg-zinc-200 w-20 h-20 rounded-md
+                "
               >
-                Semantic, accessible, and SEO-friendly HTML development.
-              </figcaption>
-            </figure>
+                <img
+                  src={src}
+                  alt={`Technology expertise icon ${index + 1}`}
+                  className="w-10 h-10 object-contain"
+                  loading="lazy"
+                />
+              </figure>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );

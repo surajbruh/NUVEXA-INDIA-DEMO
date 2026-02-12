@@ -55,14 +55,12 @@
       "href": "/contact"
     }
   ],
-
   "slides": [
     "https://images.unsplash.com/photo-1761839257475-4ca368dae6c3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "/images/slides/slide1.jpg",
     "/images/slides/slide2.jpg",
     "/images/slides/slide3.jpg"
   ],
-
   "websites": [
     {
       "websiteURL": "https://navilshipping.com/",
@@ -89,7 +87,6 @@
       "image": "/images/websites/elviorallc.png"
     }
   ],
-
   "cards": [
     {
       "href": "/services/product-engineering",
@@ -108,6 +105,48 @@
       "title": "Creative Solutions",
       "description": "Deliver visually stunning and user-focused designs through innovative UI/UX, branding, and creative digital experiences.",
       "icon": "creative-solutions"
+    }
+  ],
+  "technologies": [
+    {
+      "icon": "/icons/html.svg",
+      "caption": "HTML is a markup language used to structure and organize content on the web."
+    },
+    {
+      "icon": "/icons/css.svg",
+      "caption": "CSS is a style sheet language used to design, layout, and visually enhance web pages."
+    },
+    {
+      "icon": "/icons/javascript.svg",
+      "caption": "JavaScript is a programming language that enables interactive, dynamic, and functional web experiences."
+    },
+    {
+      "icon": "/icons/react.svg",
+      "caption": "React is a JavaScript library for building fast, scalable, and component-based user interfaces."
+    },
+    {
+      "icon": "/icons/nodejs.svg",
+      "caption": "Node.js allows JavaScript to run on the server for building scalable backend applications."
+    },
+    {
+      "icon": "/icons/express.svg",
+      "caption": "Express is a lightweight Node.js framework used to build REST APIs and web servers."
+    },
+    {
+      "icon": "/icons/mongodb.svg",
+      "caption": "MongoDB is a NoSQL database designed for flexible, scalable, and high-performance data storage."
+    },
+    {
+      "icon": "/icons/tailwind.svg",
+      "caption": "Tailwind CSS is a utility-first CSS framework for rapidly building modern user interfaces."
+    },
+    {
+      "icon": "/icons/git.svg",
+      "caption": "Git is a version control system used to track code changes and collaborate efficiently."
+    },
+    {
+      "icon": "/icons/docker.svg",
+      "caption": "Docker enables developers to package applications into containers for consistent deployments."
     }
   ]
 }
