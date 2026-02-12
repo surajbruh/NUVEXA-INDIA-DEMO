@@ -1,6 +1,6 @@
 import React from "react";
 
-const icons = import.meta.glob("/public/icons/*.svg", {
+const icons = import.meta.glob("/public/svg/technologies/*.svg", {
   eager: true,
   as: "url",
 });

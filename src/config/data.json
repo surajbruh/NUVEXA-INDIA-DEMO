@@ -151,5 +151,31 @@
       "icon": "/icons/docker.svg",
       "caption": "Docker enables developers to package applications into containers for consistent deployments."
     }
+  ],
+  "contactInfo": [
+    {
+      "icon": "/svg/phone.svg",
+      "label": "Contact Phone",
+      "value": "+55 (9900) 666 22",
+      "type": "phone"
+    },
+    {
+      "icon": "/svg/mail.svg",
+      "label": "Contact Mail",
+      "value": "info.kali@gmail.com",
+      "type": "email"
+    },
+    {
+      "icon": "/svg/location.svg",
+      "label": "Contact Location",
+      "value": "18/2, Topkhana Road, Australia\n27 Division St, New York, USA",
+      "type": "location"
+    },
+    {
+      "icon": "/svg/clock.svg",
+      "label": "Office Time",
+      "value": "Mon - Fri: 7.00 - 22.00\nSat - Sun: 9.00 - 20.00",
+      "type": "time"
+    }
   ]
 }
