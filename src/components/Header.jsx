@@ -6,7 +6,7 @@ import useDataContext from "../contexts/DataContext";
 // todo: make header component responsive
 
 const Header = () => {
-  const { navigation } = useDataContext();
+  const { navigation, socials } = useDataContext();
   const navigate = useNavigate();
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -170,28 +170,24 @@ const Header = () => {
 
           {/* Social Links */}
           <ul className="hidden lg:flex items-center gap-4">
-            <li>
-              <a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                className="hover:text-(--accent-color) transition"
-              >
-                <Linkedin strokeWidth={1.5} />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="hover:text-(--accent-color) transition"
-              >
-                <Instagram strokeWidth={1.5} />
-              </a>
-            </li>
+            {socials.map((social, index) => (
+              <li key={index}>
+                <a
+                  href={social.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
+                  className=""
+                >
+                  <img
+                    className="w-6 h-6 object-contain"
+                    src={social.icon}
+                    alt={`${social.label} icon`}
+                    loading="lazy"
+                  />
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

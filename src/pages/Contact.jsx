@@ -8,7 +8,7 @@ import ContactDetails from "../sections/ContactDetails";
 const Contact = () => {
   return (
     <main>
-      <ContactDetails />
+      {/* <ContactDetails /> */}
       <EmbeddedMap />
       <ReachOut />
     </main>

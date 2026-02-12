@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import useDataContext from "../contexts/DataContext";
 
 const Footer = () => {
-  const { navigation, about } = useDataContext();
+  const { navigation, about, socials } = useDataContext();
 
   return (
     <footer className="bg-gray-800 text-white">
@@ -57,29 +57,25 @@ const Footer = () => {
             Follow Us
           </h2>
 
-          <ul className="flex gap-4">
-            <li>
-              <a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                className="hover:text-(--accent-color) transition"
-              >
-                <Linkedin strokeWidth={1.5} />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="hover:text-(--accent-color) transition"
-              >
-                <Instagram strokeWidth={1.5} />
-              </a>
-            </li>
+          <ul className="flex items-center gap-4">
+            {socials.map((social, index) => (
+              <li key={index}>
+                <a
+                  href={social.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
+                  className=""
+                >
+                  <img
+                    className="w-6 h-6 object-contain"
+                    src={social.icon}
+                    alt={`${social.label} icon`}
+                    loading="lazy"
+                  />
+                </a>
+              </li>
+            ))}
           </ul>
         </section>
       </div>
