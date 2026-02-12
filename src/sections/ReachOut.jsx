@@ -20,7 +20,15 @@ const ReachOut = () => {
         </div>
 
         {/* Right: Contact Info */}
-        <div className="w-max mx-auto flex items-center text-3xl sm:text-4xl md:text-5xl py-2 border-b-2 border-gray-500 hover:border-white transition-colors">
+        <div
+          className="
+            w-max mx-auto flex items-center
+            text-2xl sm:text-4xl xl:text-5xl
+            py-2 border-b-2 border-gray-500
+            hover:border-white
+            transition-colors
+          "
+        >
           <a
             href="mailto:info@nuvexaindia.com"
             className="font-medium"
@@ -29,7 +37,10 @@ const ReachOut = () => {
             info@nuvexaindia.com
           </a>
 
-          <CornerDownLeft className="ml-2" size={48} aria-hidden="true" />
+          <CornerDownLeft
+            className="ml-2 sm:w-9 sm:h-9 lg:w-12 xl:h-12"
+            aria-hidden="true"
+          />
         </div>
       </div>
     </section>

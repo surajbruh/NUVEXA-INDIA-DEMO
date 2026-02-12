@@ -31,7 +31,7 @@ const Expertise = () => {
 
         {/* Right: Expertise Icons */}
         <ul
-          className="lg:w-max lg:mx-auto
+          className="
             grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5
             gap-6 justify-items-center
           "

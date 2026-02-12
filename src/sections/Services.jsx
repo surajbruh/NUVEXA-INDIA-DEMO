@@ -16,8 +16,8 @@ const Services = () => {
               id="services-heading"
               className="uppercase font-bold text-2xl sm:text-3xl md:text-4xl leading-tight"
             >
-              <span className="text-red-500">Expert IT Services </span> Built for
-              Modern Businesses
+              <span className="text-red-500">Expert IT Services </span> Built
+              for Modern Businesses
             </h2>
 
             <p className="font-light text-sm sm:text-base md:text-lg text-gray-600">
@@ -38,7 +38,7 @@ const Services = () => {
               {/* Icon / Image */}
               <figure className="mx-auto mb-8 h-24 w-24 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
                 <img
-                  src="/company_logo.png"
+                  src={item.image}
                   alt={`${item.title} IT service icon`}
                   className="h-12 w-auto object-contain"
                   loading="lazy"
