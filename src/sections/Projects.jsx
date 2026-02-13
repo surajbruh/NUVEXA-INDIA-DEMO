@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import PortfolioSlider from "../components/PortfolioSlider";
 import useDataContext from "../contexts/DataContext";
 
 const Projects = () => {
@@ -30,38 +32,55 @@ const Projects = () => {
           </div>
         </header>
 
-        {/* Projects List */}
-        <div className="relative group" onMouseLeave={() => setImage(null)}>
+        {/* Projects List — Desktop */}
+        <div
+          className="hidden lg:block relative group"
+          onMouseLeave={() => setImage(null)}
+        >
           <ul>
             {websites.map((item, index) => (
               <li key={index}>
-                <article
-                  tabIndex={0}
-                  onMouseEnter={() => setImage(item.image)}
-                  onFocus={() => setImage(item.image)}
-                  className="
-                    relative overflow-hidden px-4 py-5 border-b
-                    after:content-['']
-                    after:absolute after:inset-0
-                    after:bg-[#ff4646]
-                    after:-translate-y-full
-                    after:transition-transform after:duration-300 after:ease-in-out
-                    hover:after:translate-y-0
-                    focus-visible:after:translate-y-0
-                  "
+                <Link
+                  to={item.websiteURL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Open project ${item.title}`}
                 >
-                  <h3 className="relative z-10 uppercase font-bold text-5xl mb-3">
-                    {item.title}
-                  </h3>
-                </article>
+                  <article
+                    tabIndex={0}
+                    onMouseEnter={() => setImage(item.image)}
+                    onFocus={() => setImage(item.image)}
+                    className="
+                      relative overflow-hidden px-4 py-5 border-b
+                      after:content-['']
+                      after:absolute after:inset-0
+                      after:bg-(--accent-color)
+                      after:-translate-y-full
+                      after:transition-transform after:duration-300 after:ease-in-out
+                      hover:after:translate-y-0
+                      focus-visible:after:translate-y-0
+                    "
+                  >
+                    <h3 className="relative z-10 uppercase font-bold text-5xl mb-3">
+                      {item.title}
+                    </h3>
+                  </article>
+                </Link>
               </li>
             ))}
           </ul>
 
           {/* Image Preview */}
           {image && (
-            <div className="hidden fixed bottom-40 right-30 z-30 group-hover:block shadow-xl w-full max-w-125 aspect-video">
-              <figure className="w-full h-full overflow-hidden">
+            <aside
+              className="
+                hidden fixed bottom-[40vh] right-[10vw]
+                z-30 group-hover:block
+                shadow-xl w-full max-w-125 aspect-video
+              "
+              aria-hidden="true"
+            >
+              <figure className="w-full h-full overflow-hidden rounded-md">
                 <img
                   src={image}
                   alt="Project preview"
@@ -69,8 +88,13 @@ const Projects = () => {
                   loading="lazy"
                 />
               </figure>
-            </div>
+            </aside>
           )}
+        </div>
+
+        {/* Projects — Mobile */}
+        <div className="lg:hidden">
+          <PortfolioSlider />
         </div>
       </div>
     </section>
