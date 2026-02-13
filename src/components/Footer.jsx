@@ -1,4 +1,3 @@
-import { Linkedin, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 import useDataContext from "../contexts/DataContext";
 
