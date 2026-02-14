@@ -1,8 +1,5 @@
 @import "tailwindcss";
 
-/* ------------------------------
-   Base Reset (Tailwind-safe)
---------------------------------*/
 @layer base {
   *,
   *::before,
@@ -19,6 +16,15 @@
   :root {
     --social-icon: #99a1af;
     --accent-color: #c4181a;
+  }
+
+  .swiper {
+    --swiper-pagination-color: var(--accent-color);
+  }
+
+  .swiper-pagination {
+    position: relative !important;
+    margin-top: 12px;
   }
 }
 
@@ -63,18 +69,4 @@
   .quick-links:focus-visible::after {
     transform: scaleY(1);
   }
-
-  /* .project::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: #ff4646;
-
-    transform: translateY(-100%);
-    transition: transform 0.25s ease-in-out;
-  }
-
-  .project:hover::after {
-    transform: translateY(0);
-  } */
 }

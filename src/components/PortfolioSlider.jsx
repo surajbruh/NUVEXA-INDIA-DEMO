@@ -2,24 +2,24 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, A11y, Scrollbar } from "swiper/modules";
+import { Autoplay, Pagination, A11y } from "swiper/modules";
 
 import useDataContext from "../contexts/DataContext";
 
 import "swiper/css";
-import "swiper/css/scrollbar";
+import "swiper/css/pagination";
 
 const PortfolioSlider = () => {
   const { websites } = useDataContext();
 
   return (
     <Swiper
-      modules={[Autoplay, A11y, Scrollbar]}
+      modules={[Autoplay, A11y, Pagination]}
       autoplay={{ delay: 4000, disableOnInteraction: false }}
       loop
       spaceBetween={24}
       slidesPerView={1}
-      scrollbar={{ draggable: true }}
+      pagination={{ clickable: true }}
       breakpoints={{
         640: { slidesPerView: 1 },
         768: { slidesPerView: 2 },
