@@ -144,26 +144,27 @@
   "contactInfo": [
     {
       "icon": "/svg/phone.svg",
-      "label": "Contact Phone",
-      "value": "+55 (9900) 666 22",
+      "label": "Phone",
+      
+      "value": "+91 77188 30387",
       "type": "phone"
     },
     {
       "icon": "/svg/mail.svg",
-      "label": "Contact Mail",
-      "value": "info.kali@gmail.com",
+      "label": "Mail",
+      "value": "info.nuvexaindia@gmail.com",
       "type": "email"
     },
     {
       "icon": "/svg/location.svg",
-      "label": "Contact Location",
-      "value": "18/2, Topkhana Road, Australia\n27 Division St, New York, USA",
+      "label": "Location",
+      "value": "706, 7th Floor, Skylon Tower, Plot No. 37, Sector 19A, Vashi, Navi Mumbai, Maharashtra 400703",
       "type": "location"
     },
     {
       "icon": "/svg/clock.svg",
       "label": "Office Time",
-      "value": "Mon - Fri: 7.00 - 22.00\nSat - Sun: 9.00 - 20.00",
+      "value": "Mon - Fri: 11.00am - 7:00pm, Sat: 11.00am - 04.00pm",
       "type": "time"
     }
   ],

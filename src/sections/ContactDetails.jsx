@@ -39,27 +39,19 @@ const ContactDetails = () => {
 
                 {/* Text */}
                 <div className="space-y-1">
-                  <span className="block text-sm uppercase text-gray-500">
-                    {item.label}
-                  </span>
+                  <span className="block text-sm uppercase">{item.label}</span>
 
                   {/* Value */}
                   {item.type === "email" ? (
-                    <a
-                      href={`mailto:${item.value}`}
-                      className="font-semibold text-gray-800 hover:underline"
-                    >
+                    <a href={`mailto:${item.value}`} className="">
                       {item.value}
                     </a>
                   ) : item.type === "phone" ? (
-                    <a
-                      href={`tel:${item.value}`}
-                      className="font-semibold text-gray-800 hover:underline"
-                    >
+                    <a href={`tel:${item.value}`} className="">
                       {item.value}
                     </a>
                   ) : (
-                    <p className="font-semibold text-gray-800">{item.value}</p>
+                    <p className="">{item.value}</p>
                   )}
                 </div>
               </li>
