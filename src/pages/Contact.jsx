@@ -1,6 +1,7 @@
 import React from "react";
 
 import EmbeddedMap from "../components/EmbeddedMap";
+import PageBanner from "../components/PageBanner";
 
 import ReachOut from "../sections/ReachOut";
 import ContactDetails from "../sections/ContactDetails";
@@ -8,7 +9,8 @@ import ContactDetails from "../sections/ContactDetails";
 const Contact = () => {
   return (
     <main>
-      {/* <ContactDetails /> */}
+      <PageBanner />
+      <ContactDetails />
       <EmbeddedMap />
       <ReachOut />
     </main>

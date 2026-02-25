@@ -10,6 +10,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
+import Service from "./pages/Service";
 
 function App() {
   const { pathname } = useLocation();
@@ -26,6 +27,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="contact" element={<Contact />} />
           <Route path="portfolio" element={<Portfolio />} />
+          <Route path="services" element={<Service />} />
         </Routes>
         <Footer />
       </PageContext.Provider>

@@ -16,39 +16,7 @@
     },
     {
       "name": "services",
-      "href": "/services",
-      "dropdown": [
-        {
-          "name": "shipping",
-          "href": "/services/shipping"
-        },
-        {
-          "name": "sales and marketing",
-          "href": "/services/sales-and-marketing"
-        },
-        {
-          "name": "storage",
-          "href": "/services/storage"
-        }
-      ]
-    },
-    {
-      "name": "products",
-      "href": "/products",
-      "dropdown": [
-        {
-          "name": "lpg",
-          "href": "/products/lpg"
-        },
-        {
-          "name": "diesel",
-          "href": "/products/diesel"
-        },
-        {
-          "name": "fuel oil",
-          "href": "/products/fuel-oil"
-        }
-      ]
+      "href": "/services"
     },
     {
       "name": "contact us",
@@ -89,25 +57,46 @@
   ],
   "cards": [
     {
-      "href": "/services/product-engineering",
-      "title": "Product Engineering",
-      "description": "We design, develop, and scale high-quality digital products using modern technologies, ensuring performance, security, and scalability.",
-      "icon": "product-engineering",
-      "image": "/images/services/product-engineering.png"
+      "href": "/services/custom-software-development-solutions",
+      "title": "Custom Software Development Solutions",
+      "description": "Tailored solutions for unique business needs, built with modern technologies and best practices.",
+      "icon": "custom-software-development-solutions",
+      "image": "/svg/services/software.svg"
     },
     {
-      "href": "/services/big-data-analytics",
-      "title": "Big Data & Analytics",
-      "description": "Transform raw data into actionable insights with advanced analytics, data processing, and visualization solutions tailored to your business.",
-      "icon": "big-data-analytics",
-      "image": "/images/services/big-data-analytics.png"
+      "href": "/services/ui-ux-design",
+      "title": "UI/UX Design",
+      "description": "Beautiful, intuitive, and user-friendly designs that engage and delight customers.",
+      "icon": "ui-ux-design",
+      "image": "/svg/services/design.svg"
     },
     {
-      "href": "/services/creative-solutions",
-      "title": "Creative Solutions",
-      "description": "Deliver visually stunning and user-focused designs through innovative UI/UX, branding, and creative digital experiences.",
-      "icon": "creative-solutions",
-      "image": "/images/services/creative-solutions.png"
+      "href": "/services/it-consulting",
+      "title": "IT Consulting",
+      "description": "Expert guidance to optimize IT infrastructure and align technology with business goals.",
+      "icon": "it-consulting",
+      "image": "/svg/services/consulting.svg"
+    },
+    {
+      "href": "/services/seo-digital-marketing",
+      "title": "SEO & Digital Marketing",
+      "description": "Strategies to boost online presence and drive targeted traffic to the business.",
+      "icon": "seo-digital-marketing",
+      "image": "/svg/services/seo.svg"
+    },
+    {
+      "href": "/services/quality-assurance",
+      "title": "Quality Assurance",
+      "description": "Comprehensive testing to ensure products are robust, secure, and perform flawlessly.",
+      "icon": "quality-assurance",
+      "image": "/svg/services/quality.svg"
+    },
+    {
+      "href": "/services/hr-services",
+      "title": "HR Services",
+      "description": "Human resources support including recruitment, onboarding, payroll, and compliance to manage workforce effectively.",
+      "icon": "hr-services",
+      "image": "/svg/services/hr.svg"
     }
   ],
   "technologies": [
