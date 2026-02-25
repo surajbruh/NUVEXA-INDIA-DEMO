@@ -4,6 +4,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 // components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 // pages
 import Home from "./pages/Home";
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <>
+      <ScrollToTop />
       <PageContext.Provider value={pageTitle}>
         <Header />
         <Routes>
