@@ -19,7 +19,7 @@ const Partners = () => {
             Our <span className="text-red-500">Trusted Partners</span>
           </h2>
 
-          <p className="mt-3 text-gray-600 text-sm sm:text-base max-w-2xl mx-auto">
+          <p className="mt-3 font-light text-gray-600 text-sm sm:text-xl max-w-2xl mx-auto">
             We collaborate with industry-leading partners to deliver reliable,
             scalable, and future-ready digital solutions.
           </p>

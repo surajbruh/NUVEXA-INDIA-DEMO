@@ -5,6 +5,7 @@ import PageBanner from "../components/PageBanner";
 
 import ReachOut from "../sections/ReachOut";
 import ContactDetails from "../sections/ContactDetails";
+import Partners from "../sections/Partners";
 
 const Contact = () => {
   return (
