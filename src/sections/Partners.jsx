@@ -6,7 +6,7 @@ const Partners = () => {
 
   return (
     <section
-      className="w-full bg-blue-50 py-14"
+      className="w-full bg-gray-100 py-14"
       aria-labelledby="partners-heading"
     >
       <div className="max-w-7xl mx-auto px-6">
@@ -16,7 +16,7 @@ const Partners = () => {
             id="partners-heading"
             className="uppercase font-bold text-2xl sm:text-3xl md:text-4xl"
           >
-            Our Trusted Partners
+            Our <span className="text-red-500">Trusted Partners</span>
           </h2>
 
           <p className="mt-3 text-gray-600 text-sm sm:text-base max-w-2xl mx-auto">
@@ -27,24 +27,17 @@ const Partners = () => {
 
         {/* Partners Grid */}
         <ul
-          className="
-            grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5
-            gap-10 items-center justify-items-center
-          "
+          className="max-w-3xl mx-auto
+            grid grid-cols-1 sm:grid-cols-3
+            items-center justify-items-center"
           aria-label="List of partner companies"
         >
           {partners.map((partner) => (
-            <li key={partner.name}>
+            <li className="" key={partner.name}>
               <img
                 src={partner.logo}
                 alt={`${partner.name} partner logo`}
-                className="
-                  max-h-16 w-auto
-                  object-contain
-                  grayscale
-                  hover:grayscale-0
-                  transition duration-300
-                "
+                className="max-w-50 object-contain"
                 loading="lazy"
               />
             </li>
