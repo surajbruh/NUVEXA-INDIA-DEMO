@@ -24,9 +24,12 @@ const ContactDetails = () => {
           </div>
 
           {/* Contact Info Grid */}
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {contactInfo.map((item, index) => (
-              <li key={index} className="flex items-start gap-4 p-5">
+          <ul className="grid grid-cols-1">
+            {contactInfo.map((item) => (
+              <li
+                key={item.label}
+                className="flex items-start gap-4 p-5"
+              >
                 {/* Icon */}
                 <figure className="flex items-center justify-center bg-zinc-200 w-16 h-16 rounded-full shrink-0">
                   <img
@@ -39,19 +42,33 @@ const ContactDetails = () => {
 
                 {/* Text */}
                 <div className="space-y-1">
-                  <span className="block text-sm uppercase">{item.label}</span>
+                  <span className="block text-sm uppercase text-gray-600">
+                    {item.label}
+                  </span>
 
                   {/* Value */}
                   {item.type === "email" ? (
-                    <a href={`mailto:${item.value}`} className="">
+                    <a
+                      href={`mailto:${item.value}`}
+                      className="font-medium hover:underline"
+                    >
                       {item.value}
                     </a>
                   ) : item.type === "phone" ? (
-                    <a href={`tel:${item.value}`} className="">
+                    <a
+                      href={`tel:${item.value}`}
+                      className="font-medium hover:underline"
+                    >
                       {item.value}
                     </a>
+                  ) : item.type === "time" ? (
+                    item.value.map((time) => (
+                      <p key={time} className="leading-tight font-medium">
+                        {time}
+                      </p>
+                    ))
                   ) : (
-                    <p className="">{item.value}</p>
+                    <p className="font-medium">{item.value}</p>
                   )}
                 </div>
               </li>

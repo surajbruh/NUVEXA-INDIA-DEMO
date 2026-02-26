@@ -143,28 +143,28 @@
   ],
   "contactInfo": [
     {
-      "icon": "/svg/phone.svg",
+      "icon": "/svg/contact/phone.svg",
       "label": "Phone",
-      
-      "value": "+91 77188 30387",
+
+      "value": "+91 84228 01640",
       "type": "phone"
     },
     {
-      "icon": "/svg/mail.svg",
+      "icon": "/svg/contact/mail.svg",
       "label": "Mail",
       "value": "info.nuvexaindia@gmail.com",
       "type": "email"
     },
     {
-      "icon": "/svg/location.svg",
+      "icon": "/svg/contact/location.svg",
       "label": "Location",
       "value": "706, 7th Floor, Skylon Tower, Plot No. 37, Sector 19A, Vashi, Navi Mumbai, Maharashtra 400703",
       "type": "location"
     },
     {
-      "icon": "/svg/clock.svg",
+      "icon": "/svg/contact/clock.svg",
       "label": "Office Time",
-      "value": "Mon - Fri: 11.00am - 7:00pm, Sat: 11.00am - 04.00pm",
+      "value": ["Mon - Fri: 11.00am - 7:00pm", " Sat: 11.00am - 04.00pm"],
       "type": "time"
     }
   ],
