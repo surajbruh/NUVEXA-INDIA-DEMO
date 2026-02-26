@@ -4,6 +4,7 @@ import Work from "../sections/Work";
 import Services from "../sections/Services";
 import Expertise from "../sections/Expertise";
 import ReachOut from "../sections/ReachOut";
+import Partners from "../sections/Partners";
 
 import CallToAction from "../components/CallToAction";
 
@@ -15,6 +16,7 @@ const Home = () => {
       <CallToAction />
       <Services />
       <Expertise />
+      <Partners />
       <ReachOut />
     </main>
   );

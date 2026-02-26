@@ -179,5 +179,19 @@
       "link": "https://www.instagram.com/nuvexa_india",
       "label": "Instagram"
     }
+  ],
+  "partners": [
+    {
+      "name": "Digitide",
+      "logo": "/svg/partners/digitide.svg"
+    },
+    {
+      "name": "Grand-Ocean",
+      "logo": "/svg/partners/grand-ocean.svg"
+    },
+    {
+      "name": "Lancer Container Lines LTD.",
+      "logo": "/svg/partners/lancer.svg"
+    }
   ]
 }
