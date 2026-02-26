@@ -55,7 +55,7 @@ const Services = () => {
                   {item.description}
                 </p>
 
-                {item.href && (
+                {/* {item.href && (
                   <Link
                     to={item.href}
                     className="inline-flex items-center gap-1 uppercase text-sm font-medium text-red-600
@@ -66,7 +66,7 @@ const Services = () => {
                     Read More
                     <ChevronRight size={18} strokeWidth={2} />
                   </Link>
-                )}
+                )} */}
               </div>
             </article>
           ))}

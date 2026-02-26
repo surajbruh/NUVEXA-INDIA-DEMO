@@ -35,7 +35,7 @@ const Hero = () => {
               className="flex flex-wrap justify-center gap-4 pt-4"
             >
               <Link
-                to="/about"
+                to="/portfolio"
                 className="uppercase px-6 py-2 text-sm sm:text-base bg-red-500 hover:bg-red-600 transition-colors"
               >
                 Discover More
