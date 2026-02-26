@@ -26,8 +26,8 @@ const Projects = () => {
             </h2>
 
             <p className="text-sm sm:text-base md:text-lg text-gray-600">
-              See how Avola empowers growth with digital projects, unique tech,
-              and agile support for clients in many sectors.
+              Empowering businesses with reliable IT consulting, strategic
+              solutions, and cutting-edge technology.
             </p>
           </div>
         </header>

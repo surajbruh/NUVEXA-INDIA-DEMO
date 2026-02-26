@@ -25,10 +25,10 @@ const Header = () => {
           </a>
           <span className="text-gray-400">|</span>
           <a
-            href="tel:+1124545678"
+            href="tel:+918422801640"
             className="text-red-600 font-medium hover:underline"
           >
-            (1) 245-45678
+            +91 84228 01640
           </a>
         </div>
       </div>
