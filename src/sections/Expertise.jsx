@@ -1,8 +1,9 @@
 import React from "react";
 
-const icons = import.meta.glob("/public/svg/technologies/*.svg", {
+const icons = import.meta.glob("/src/assets/technologies/*.svg", {
   eager: true,
-  as: "url",
+  query: "?url",
+  import: "default",
 });
 
 const Expertise = () => {

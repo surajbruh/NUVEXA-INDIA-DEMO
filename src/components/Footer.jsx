@@ -64,7 +64,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
-                  className=""
+                  className="hover:opacity-70 transition"
                 >
                   <img
                     className="w-6 h-6 object-contain"
